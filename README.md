@@ -1,2 +1,2 @@
-# Horoscope.io
-Site para o projeto de redes
+# Horoscope
+Site para a VirtualMachine do projeto de Redes e Comunicações
