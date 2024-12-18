@@ -80,7 +80,7 @@
         <!-- Explicacao do jogo -->
         <div class="section">
             <h1>O Jogo:</h1>
-            <p>"Guess the number" é um jogo que precisa de dois PC's. Um para o servidor onde vai gerar um número aleatório entre 0-100 e outro para o cliente que vai tentar adivinhar esse número. O jogo acaba quando acertar em cheio no número!</p>
+            <p>"Guess the number" é um jogo que precisa de dois PC's. Um para o servidor onde vai gerar um número aleatório entre 0-1000 e outro para o cliente que vai tentar adivinhar esse número. O jogo acaba quando acertar em cheio no número!</p>
         </div>
 
         <!-- Explicacao do Cliente/Servidor -->
@@ -90,7 +90,7 @@
                 <li>O <strong>Servidor</strong> gera um número aleatório dentro de um intervalo configurado (0-1000).</li>
                 <li>O <strong>Cliente</strong> é utilizado pelo jogador para enviar palpites ao servidor.</li>
                 <li>O Servidor responde com dicas, indicando se o jogador deve tentar um número maior ou menor.</li>
-                <li>O Servidor também regista o número de tentativas de cada jogador (identificado por seu IP, porta e nome).</li>
+                <li>O Servidor também regista o número de tentativas de cada jogador (identificado pelo seu IP).</li>
                 <li>Quando o jogador acerta, o servidor envia uma mensagem de vitória e pergunta se quer jogar de novo.</li>
                 <li>O registo das pontuações também é guardado num ficheiro <i>leaderboard.txt</i></li>
             </ul>
@@ -101,8 +101,8 @@
             <h1>Como Jogar?</h1>
             <ol>
                 <li>Iniciar o servidor com o comando <code>sudo python3 server.py</code> (substituir a palavra <i>server</i> pelo nome do ficheiro do servidor)</li>
-                <li>Após o servidor inicar, para conectar ao servidor usa-se o comando <code>sudo python3 client.py</code>(substituir a palavra <i>client</i> pelo nome do ficheiro do cliente)</li>
-                <li>Depois da ligação estar estabelecida é basta começar a jogar.</li>
+                <li>Após o servidor inicar, para conectar ao servidor usa-se o comando <code>sudo python3 client.py</code></li>
+                <li>Depois da ligação estar estabelecida basta começar a jogar.</li>
                 <li>Para sair, no final do jogo basta não continuar ou fazer <code>CTRL + C</code></li>
             </ol>
         </div>
@@ -111,8 +111,8 @@
             <h1>Servidor e cliente:</h1>
                 <p>Aqui podes ver um exemplo da comunicação entre o servidor e o cliente  ↷</p>
             <img src="../imagens/clienteEservidor.png" alt="servidor_cliente" style="width: 1000px;">
-                <p>Se não tens o ficheiro necessário, clica no botão abaixo para o baixar:</p>
-            <button class="download-button" onclick="location.href='../cliente.py'" download>Baixar Ficheiro</button>
+                <p>Se não tens o ficheiro necessário, clica no botão em baixo para transferir:</p>
+            <button class="download-button" onclick="location.href='../cliente.py'" download>Download do Ficheiro</button>
         </div>
 
         <!-- Botao de voltar-->
